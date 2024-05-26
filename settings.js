@@ -10,7 +10,7 @@ const fs = require('fs')
 const chalk = require('chalk')
 
 //—————「 Website Apikey 」—————//
-global.APIs = {
+global.fph99bhMR7zN6i = {
 //gausah di apa² in!
 zenz: 'https://zenzapis.xyz',
 }
