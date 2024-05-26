@@ -182,14 +182,14 @@ module.exports = chika = async (chika, m, chatUpdate, store) => {
 	  // Anti Link
         if (db.data.chats[m.chat].antilink) {
         if (budy.match(`chat.whatsapp.com`)) {
-        reply(`「 ANTI LINK 」\n\nKamu terdeteksi mengirim link group, maaf kamu akan di kick !`)
+        reply(`「 ANTI LINK 」\n\nKan udh gua bilang bangsat jngn kirim link grub lain babi kena kick kan lu !`)
         if (!isBotAdmins) return reply(`Ehh bot gak admin T_T`)
         let gclink = (`https://chat.whatsapp.com/`+await chika.groupInviteCode(m.chat))
         let isLinkThisGc = new RegExp(gclink, 'i')
         let isgclink = isLinkThisGc.test(m.text)
-        if (isgclink) return reply(`Ehh maaf gak jadi, karena kamu ngirim link group ini`)
-        if (isAdmins) return reply(`Ehh maaf kamu admin`)
-        if (isCreator) return reply(`Ehh maaf kamu owner bot ku`)
+        if (isgclink) return reply(`ah elah np lu ngirim link grub ini si gk bisa kick lu kan`)
+        if (isAdmins) return reply(`alah admin ribet banget bangsat`)
+        if (isCreator) return reply(`woi bos yg bener lah jaga bot nya cok`)
         chika.groupParticipantsUpdate(m.chat, [m.sender], 'remove')
         }
         }
